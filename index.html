@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Walk</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="script.js"></script>
+        <script src="http://crypto-js.googlecode.com/svn/tags/3.0.2/build/rollups/md5.js"></script>
+
+        <!-- Everythin needed for Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    </head>
+    <body>
+        <div class="jumbotron text-center">
+            <h1>Random Walk</h1>
+            <p>A little Box who walks a random way</p> 
+        </div>
+        <center>
+        <div class="container">
+            <canvas id="canv" width="500" height="500" style="border:1px solid #c3c3c3;">
+                Sorry but it seems like your Browser does not Support Html5 canvas :(
+            </canvas>
+
+            <p>
+                Traveldistance: <br />
+                <p style="width:500px">
+                <input class="mdl-slider mdl-js-slider" type="range" id="walkRange" min="0" max="50" value="10" step="1">
+                </p>
+            </p>
+           
+            <button class="mdl-button mdl-js-button mdl-button--primary" id="downBtn">
+                Download as Image
+            </button>
+        </div>
+        </center>
+    </body>
+</html>
